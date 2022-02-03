@@ -80,8 +80,12 @@ img {
     background-color: #f2f2cd;
   }
 
+  img{
+    max-height: 200px;
+  }
+
   .row{
-    width: 100%;
+    max-width: 100%;
   }
 
   #lezioni .row{
@@ -115,35 +119,59 @@ img {
 
 /* display tablet */
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 420px) and (max-width: 768px){  
   #lezioni{
     background-color: #f2f2cd;
   }
 
-  #why{
-    background-color: #f2f2cd;
+  .row{
+    margin-top: 20px;
   }
 
-  .row{
-    width: 100%;
+  #lezioni .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   h1{
     width: 100%;
   }
 
+  img{
+    max-width: 200px;
+    object-fit: contain;
+  }
+
+  .row{
+    max-width: 100%;
+  }
+  
+  h1{
+    width: 100%;
+  }
+  
   #steps .row{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-around;
   }
   
   #steps .row > .right{
     width: 100%;
   }
-
+  
   hr{
     display: none;
+  }
+  
+  #why{
+    background-color: #f2f2cd;
+  }
+
+  #why .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
