@@ -109,3 +109,36 @@ img {
     background-color: #f2f2cd;
   }
 }
+
+@media screen and (max-width: 768px){
+  #lezioni{
+    background-color: #f2f2cd;
+  }
+
+  #why{
+    background-color: #f2f2cd;
+  }
+
+  .row{
+    width: 100%;
+  }
+
+  h1{
+    width: 100%;
+  }
+
+  #steps .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  #steps .row > .right{
+    width: 100%;
+  }
+
+  hr{
+    display: none;
+  }
+}
