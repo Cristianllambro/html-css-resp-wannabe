@@ -130,6 +130,10 @@ img {
   #why .row{
     margin-top: 3em;
   }
+
+  hr{
+    display: none;
+  }
 }
 
 
